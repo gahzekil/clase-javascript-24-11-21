@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ejemplo JS</title>
+    <script type="text/javascript">
+      function nombre() {
+        var name, age;
+        name = prompt("ingrese su nombre");
+        age = prompt("ingrese su edad");
+        if (parseInt(age) >= 18) {
+          alert("el sr/a " + name + " es mayor de edad");
+        } else {
+          alert("el sr/a " + name + " no es mayor de edad");
+        }
+      }
+    </script>
+    <script type="text/javascript">
+      function numeros() {
+        var num1, num2, des, vt;
+        num1 = prompt("ingrese un numero");
+        num2 = prompt("ingrese un numero");
+        if (parseInt(num1) > parseInt(num2)) {
+          alert("el " + num1 + " es mayor que " + num2);
+        } else {
+          alert("el " + num1 + "es menor que " + num2);
+        }
+      }
+    </script>
+    <script>
+      function precio() {
+        var vc1, vc2, des, vt;
+        vc1 = prompt("ingrese el valor de la primera camisa");
+        vc2 = prompt("ingrese el valor de la segunda camisa");
+        if (parseInt(vc1) > parseInt(vc2)) {
+          (des = parseInt(vc1) * 0), 5;
+          vt = des + parseInt(vc2);
+          alert("el valor total a pagar es " + vt);
+        } else {
+          (des = parseInt(vc2) * 0), 5;
+          vt = des + parseInt(vc1);
+          alert("el valor total a pagar es " + vt);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <p>programa para ingresar nombre</p>
+      <button onclick="nombre()">ingresar</button>
+      <br /><br />
+      <p>programa para comparacion de numeros</p>
+      <button onclick="numeros()">ingresar</button>
+      <p>comparacion de precios</p>
+      <button onclick="precio()">ingresar</button>
+    </div>
+  </body>
+</html>
